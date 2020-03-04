@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bus Mall Store</title>
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bus Mall Store</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cart.html">Cart</a><span id="itemCount"></span></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- <section class="deck col-1">
+        <div class="card">
+          <header>
+            <h1>Shop Our Catalog</h1>
+          </header>
+          <div class="copy">
+            <ol>
+              <li>Select an item from our catalog and indicate how many you would like to purchase.</li>
+              <li>Once you've made your selection, click the "Add to Cart" button</li>
+              <li>When you are ready to purchase, click the "Cart" link above to view your cart and check out</li>
+            </ol>
+          </div>
+        </div> -->
+      <!-- </section> -->
+      <section class="form">
+        <div class="card">
+
+     
+            <form id =  "form">
+              <fieldset>
+                <legend>Shopping cart</legend>
+                <label>
+                  <span >Item</span>
+                  <select id = "prouSel">
+                  <option value="bag">bag</option>
+                  <option value="banana">banana</option>
+                  <option value="bathroom">bathroom</option>
+                  <option value="boots">boots</option>
+                  <option value="breakfast">breakfast</option>
+                  <option value="bubblegum">bubblegum</option>
+                  <option value="chair">chair</option>
+                  <option value="cthulhu">cthulhu</option>
+                  <option value="dog-duck">dog-duck</option>
+                  <option value="dragon">dragon</option>
+                  <option value="pet-sweep">pet-sweep</option>
+                  <option value="scissors">scissors</option>
+                  <option value="shark">shark</option>
+                  <option value="sweep">bag</option>
+                  <option value="tauntaun">tauntaun</option>
+                  <option value="unicorn">unicorn</option>
+                  <option value="usb">usb</option>
+                  <option value="water-can">water-can</option>
+                  <option value="wine-glass">wine-glass</option>
+                </select>
+
+                </label>
+                
+                <span>Number</span>
+                  <input id = "Number" type="number" required min="1"/>
+                </label>
+                <input type="submit" value="Add To Cart" />
+              </fieldset>
+            </form>
+          </div>
+          <a href="#!" class="button" data-micron="pop">Pop</a>
+        <div class="card" id="cartContents"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2018 Code Fellows 201d33</p>
+    </footer>
+    <script src='js/app.js'></script>
+    <script src='js/catalog.js'></script>
+  </body>
+</html>
